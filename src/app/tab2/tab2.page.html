@@ -6,4 +6,14 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-button fill="solid" shape="round" color="warning" >
+    Click me
+  </ion-button>
+  <ion-button (click)="onClick()" expand="full">
+    Click me
+  </ion-button>
+  <ion-button expand="block">
+    <ion-icon slot="icon-only" name="add"></ion-icon>
+  </ion-button>
+</ion-content>
