@@ -10,7 +10,7 @@ const routes: Routes = [
       { path: 'tab1',  children: [{ path: '', loadChildren: '../tab1/tab1.module#Tab1PageModule' }] },
       { path: 'tab2',  children: [{ path: '', loadChildren: '../tab2/tab2.module#Tab2PageModule' }] },
       { path: 'tab3',  children: [{ path: '', loadChildren: '../tab3/tab3.module#Tab3PageModule' }] },
-      { path: 'formulario', children: [{ path: '', loadChildren: '../formulario/formulario.module#FormularioPageModule' }] },
+      { path: 'cards', children: [{ path: '/cards', loadChildren: '../cards/cards.module#CardsPageModule' }] },
       { path: '', redirectTo: '/tabs/tab1', pathMatch: 'full' }
     ] },
     

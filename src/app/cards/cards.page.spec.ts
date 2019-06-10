@@ -1,7 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormularioPage } from './formulario.page';
+import { FormularioPage } from './cards.page';
 
 describe('FormularioPage', () => {
   let component: FormularioPage;

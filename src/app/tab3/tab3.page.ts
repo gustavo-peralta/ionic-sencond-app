@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { CardsPage } from '../cards/cards.page';
 
 @Component({
   selector: 'app-tab3',
@@ -16,6 +18,15 @@ export class Tab3Page {
     { titulo: 'Tit6', id: 6, descripcion: 'Lorem ipsum dolor'},
   ]
 
-  constructor() {}
+  constructor(public modalController: ModalController) {}
+
+  public async onClick(item){
+    const modal = await this.modalController.create({
+      component: CardsPage,
+      componentProps: { value: item }
+    });
+
+    modal.present();
+  }
 
 }

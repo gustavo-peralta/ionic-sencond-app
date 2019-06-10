@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-formulario',
-  templateUrl: './formulario.page.html',
-  styleUrls: ['./formulario.page.scss'],
+  templateUrl: './cards.page.html',
+  styleUrls: ['./cards.page.scss'],
 })
-export class FormularioPage implements OnInit {
+export class CardsPage implements OnInit {
 
   constructor() { }
 
